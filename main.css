@@ -45,6 +45,12 @@ h1{
     height: 500px;
     background-color: var(--secondary-light);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    grid-template-columns: repeat(12, 1fr); 
+    grid-template-rows: repeat(12, 1fr)
+}
+
+#grid_item{
+    user-select: none;
 }
 
 .options{
@@ -54,6 +60,8 @@ h1{
     gap: 30px;
     width: 200px;
 }
+
+
 
 button{
     padding: 10px 20px;
@@ -73,6 +81,9 @@ button.active{
     background-color: black;
     color: var(--primary-light);
 }
+.grid-element {
+    user-select: none;
+  }
 
 button, input[text="color"] {
     transition: transform .1s ease-in-out;
